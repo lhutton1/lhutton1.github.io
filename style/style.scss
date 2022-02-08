@@ -1,3 +1,6 @@
+$small: 576px;
+$medium: 768px;
+
 html, body {
     padding: 0;
     margin: 0;
@@ -39,6 +42,11 @@ html, body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        flex-direction: column;
+
+        @media screen and (min-width: $medium) {
+            flex-direction: row;
+        }
 
         .profile-middle {
             padding: 15px;
